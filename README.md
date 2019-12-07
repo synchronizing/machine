@@ -1,47 +1,5 @@
 # Personal OSX Setup
 
-### `.bash_profile`
-
-This is the helping prompt for the `.bash_profile` above:
-
-```
-@Personal
-    h               Opens this help dialogue.
-    drive           cd into Google drive folder.
-    prog            cd into development folder.
-    desk            cd into desktop folder.
-
-@Utils
-    cheat <str>     Returns a simple cheat-sheet for anything.
-    weather <loc>   Returns the local, or inputted locations weather.
-    short <url>     Returns a shorter link that redirects to the given url.
-
-@Docker
-    dstop           Stops all running Docker containers.
-    drm             Removes all Docker containers.
-    drmi            Removes all Docker images
-
-@Internet
-    ports           Displays all the currently open ports on this machine.
-    myip            Prints your local and external IP.
-
-@System
-    finder          Opens the Finder on the current directory.
-    show            Shows hidden files on Finder.
-    hide            Hides hidden files on Finder.
-    showdesk        Shows all the icons on the desktop.
-    hidedesk        Hides all the icons on the desktop.
-    sleepoff        Prevents computer for ever going to sleep; including closing lid.
-    sleepon         Resets computer sleep settings to 10 minutes for sleep.
-    trashDS         Perm deletes all .DS_Store files with nested dirs support.
-```
-
-and it looks like so:
-
-![image](https://github.com/synchronizing/osx-start-package/blob/master/images/bash_profile.png)
-
----
-
 ### `start_up.sh`
 
 Utility for when I re-install OSX fresh. Does the following:
@@ -108,3 +66,45 @@ Utility for when I re-install OSX fresh. Does the following:
   * Automatically sets theme settings.
 * iTerm
   * Clones `dracula` to the desktop for easy theme installation.
+
+---
+
+### `.bash_profile`
+
+This is the helping prompt for the `.bash_profile` above:
+
+```
+@Personal
+    h               Opens this help dialogue.
+    drive           cd into Google drive folder.
+    prog            cd into development folder.
+    desk            cd into desktop folder.
+
+@Utils
+    cheat <str>     Returns a simple cheat-sheet for anything.
+    weather <loc>   Returns the local, or inputted locations weather.
+    short <url>     Returns a shorter link that redirects to the given url.
+
+@Docker
+    dstop           Stops all running Docker containers.
+    drm             Removes all Docker containers.
+    drmi            Removes all Docker images
+
+@Internet
+    ports           Displays all the currently open ports on this machine.
+    myip            Prints your local and external IP.
+
+@System
+    finder          Opens the Finder on the current directory.
+    show            Shows hidden files on Finder.
+    hide            Hides hidden files on Finder.
+    showdesk        Shows all the icons on the desktop.
+    hidedesk        Hides all the icons on the desktop.
+    sleepoff        Prevents computer for ever going to sleep; including closing lid.
+    sleepon         Resets computer sleep settings to 10 minutes for sleep.
+    trashDS         Perm deletes all .DS_Store files with nested dirs support.
+```
+
+and it looks like so:
+
+![image](https://github.com/synchronizing/osx-start-package/blob/master/images/bash_profile.png)
