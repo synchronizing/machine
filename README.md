@@ -1,5 +1,13 @@
 # Personal OSX Setup
 
+### Installing
+
+Run the following on your Terminal application. 
+
+```
+curl -o ~/Desktop/start_up.sh "https://raw.githubusercontent.com/synchronizing/osx-start-package/master/start_up.sh" && chmod +x ~/Desktop/start_up.sh && ~/Desktop/start_up.sh
+```
+
 ### `start_up.sh`
 
 Utility for when I re-install OSX fresh. Does the following:
@@ -16,31 +24,32 @@ Utility for when I re-install OSX fresh. Does the following:
     * Google Chrome
     * WhatsApp
     * Spotify
-    * Fantastical 2
+    * [Fantastical 2](https://flexibits.com/fantastical)
   * Security & Privacy
     * 1Password
     * NordVPN
     * Tor-Browser
   * Utilities
-    * Dozer
-    * Rectangle
-    * Handbrake
-    * AppCleaner
-    * Deluge
+    * [Dozer](https://dozermac.com/)
+    * [Rectangle](https://rectangleapp.com/)
+    * [Handbrake](https://handbrake.fr/)
+    * [AppCleaner](https://freemacsoft.net/appcleaner/)
+    * [Deluge](https://deluge-torrent.org/)
   * Microsoft Office Suite
     * Office
     * Excel
     * PowerPoint
   * Development
-    * Atom
-    * iTerm 2
-    * Docker
-    * VirtualBox
-    * wget
+    * [Atom](https://atom.io/)
+    * [iTerm 2](https://iterm2.com/)
+    * [Docker](https://www.docker.com/)
+    * [VirtualBox](https://www.virtualbox.org/)
+    * [httpie](https://httpie.org/)
+    * [wget](https://www.gnu.org/software/wget/)
   * Version Control (dev)
-    * Pyenv
-    * Nodenv
-    * Rbenv
+    * [pyenv](https://github.com/pyenv/pyenv)
+    * [nodenv](https://github.com/nodenv/nodenv)
+    * [rbenv](https://github.com/rbenv/rbenv)
 * Virtual Envs
   * Sets up correct PATHs.
   * Installs and sets to global:
@@ -49,35 +58,37 @@ Utility for when I re-install OSX fresh. Does the following:
     * `Nodejs 13.2.0`
 * Python
   * Data Science
-    * `jupyter`
-    * `pandas`
-    * `numpy`
-    * `matplotlib`
-    * `scikit-learn`
-    * `tensorflow`
+    * [`jupyter`](https://jupyter.org/)
+    * [`pandas`](https://pandas.pydata.org/)
+    * [`numpy`](https://numpy.org/)
+    * [`matplotlib`](https://matplotlib.org/)
+    * [`scikit-learn`](https://scikit-learn.org/stable/)
+    * [`tensorflow`](https://www.tensorflow.org/)
   * Networking
-    * `requests`
-    * `aiohttp`
+    * [`requests`](https://requests.readthedocs.io/en/master/)
+    * [`aiohttp`](https://aiohttp.readthedocs.io/en/stable/)
   * IDE Related
-    * `python-language-server[all]`
-    * `black`
+    * [`python-language-server[all]`](https://github.com/palantir/python-language-server)
+    * [`black`](https://github.com/psf/black)
 * Atom
   * Installs the following
-    * `ide-python`
-    * `python-black`
-    * `file-icon`
-    * `terminal-tab-plus`
-    * `atom-material-ui`
-    * `dracula-syntax`
+    * [`ide-python`](https://atom.io/packages/ide-python)
+    * [`python-black`](https://atom.io/packages/python-black)
+    * [`file-icon`](https://atom.io/packages/file-icons)
+    * [`terminal-tab-plus`](https://atom.io/packages/terminal-tab-plus)
+    * [`atom-material-ui`](https://atom.io/themes/atom-material-ui)
+    * [`dracula-syntax`](https://atom.io/themes/dracula-syntax)
   * Automatically sets theme settings.
 * iTerm
-  * Clones `dracula` to the desktop for easy theme installation.
+  * Clones [`dracula`](https://draculatheme.com/iterm/) to the desktop for easy theme installation.
 
----
+Atom and iTerm will look like so:
 
-### `.bash_profile`
+![image](https://github.com/synchronizing/osx-start-package/blob/master/images/atom.png)
 
-This is the helping prompt for the `.bash_profile` above:
+![image](https://github.com/synchronizing/osx-start-package/blob/master/images/bash_profile.png)
+
+A custom `.bash_profile` is also installed and the following commands are added:
 
 ```
 @Personal
@@ -110,7 +121,3 @@ This is the helping prompt for the `.bash_profile` above:
     sleepon         Resets computer sleep settings to 10 minutes for sleep.
     trashDS         Perm deletes all .DS_Store files with nested dirs support.
 ```
-
-and it looks like so:
-
-![image](https://github.com/synchronizing/osx-start-package/blob/master/images/bash_profile.png)

@@ -35,7 +35,7 @@ brew cask install microsoft-office microsoft-excel microsoft-powerpoint
 brew cask install dozer rectangle handbrake appcleaner deluge
 
 # Development
-brew cask install atom iterm2 docker wget virtualbox
+brew cask install atom iterm2 docker wget httpie virtualbox
 
 # Version Control
 brew install pyenv nodenv rbenv
