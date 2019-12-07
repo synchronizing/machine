@@ -1,4 +1,4 @@
-# Personal OSX Setup
+# ☕️ Fresh OSX Setup
 
 ### Installing
 
