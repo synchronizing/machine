@@ -31,6 +31,12 @@ Utility for when I re-install OSX fresh. Does the following:
     * Office
     * Excel
     * PowerPoint
+  * Development
+    * Atom
+    * iTerm 2
+    * Docker
+    * VirtualBox
+    * wget
   * Version Control (dev)
     * Pyenv
     * Nodenv
