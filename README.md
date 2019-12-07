@@ -63,7 +63,6 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
     * [`numpy`](https://numpy.org/)
     * [`matplotlib`](https://matplotlib.org/)
     * [`scikit-learn`](https://scikit-learn.org/stable/)
-    * [`tensorflow`](https://www.tensorflow.org/)
   * Networking
     * [`requests`](https://requests.readthedocs.io/en/master/)
     * [`aiohttp`](https://aiohttp.readthedocs.io/en/stable/)
@@ -71,13 +70,13 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
     * [`python-language-server[all]`](https://github.com/palantir/python-language-server)
     * [`black`](https://github.com/psf/black)
 * Atom
-  * Installs the following
+  * Themes
+    * [`atom-material-ui`](https://atom.io/themes/atom-material-ui)
+    * [`dracula-syntax`](https://atom.io/themes/dracula-syntax)
+  * Utilities
     * [`ide-python`](https://atom.io/packages/ide-python)
     * [`python-black`](https://atom.io/packages/python-black)
     * [`file-icon`](https://atom.io/packages/file-icons)
-    * [`terminal-tab-plus`](https://atom.io/packages/terminal-tab-plus)
-    * [`atom-material-ui`](https://atom.io/themes/atom-material-ui)
-    * [`dracula-syntax`](https://atom.io/themes/dracula-syntax)
   * Automatically sets theme settings.
 * iTerm
   * Clones [`dracula`](https://draculatheme.com/iterm/) to the desktop for easy theme installation.
