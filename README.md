@@ -38,7 +38,7 @@ This is the helping prompt for the `.bash_profile` above:
 
 and it looks like so:
 
-[image]
+![image](https://github.com/synchronizing/osx-start-package/blob/master/images/bash_profile.png)
 
 ---
 
