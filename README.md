@@ -2,7 +2,7 @@
 
 ### Installing
 
-Run the following on your Terminal application.
+Run the following in your Terminal application.
 
 ```
 curl -o ~/Desktop/start_up.sh "https://raw.githubusercontent.com/synchronizing/osx-start-package/master/start_up.sh" && chmod +x ~/Desktop/start_up.sh && ~/Desktop/start_up.sh
