@@ -26,7 +26,7 @@ touch ~/.hushlogin
 brew cask install google-chrome whatsapp spotify fantastical
 
 # Security & Privacy
-brew cask install 1password nordvpn
+brew cask install 1password nordvpn tor-browser
 
 # Office Suite
 brew cask install microsoft-office microsoft-excel microsoft-powerpoint
@@ -78,7 +78,7 @@ pip install python-language-server[all] black
 # Installs Atom's theme.
 
 # Install Atom packages.
-apm install ide-python python-black file-icons terminal-tab-plus
+apm install ide-python python-black file-icons terminal-tab-plus atom-material-ui dracula-syntax
 
 echo '"*":
   "atom-material-ui":
