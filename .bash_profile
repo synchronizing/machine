@@ -1,5 +1,10 @@
-# PYENV Setup
+# Removes Bash warning.
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Path setup.
 eval "$(pyenv init -)"
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
 
 # Open shell directly on desktop.
 cd ~/Desktop
@@ -151,9 +156,3 @@ function parse_git_branch() {
 
 export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\t \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n ☁️   \[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
-eval "$(pyenv init -)"
-export BASH_SILENCE_DEPRECATION_WARNING=1
-eval "$(pyenv init -)"
-eval "$(nodenv init -)"
-
-export BASH_SILENCE_DEPRECATION_WARNING=1
