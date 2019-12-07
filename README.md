@@ -2,7 +2,7 @@
 
 ### Installing
 
-Run the following on your Terminal application. 
+Run the following on your Terminal application.
 
 ```
 curl -o ~/Desktop/start_up.sh "https://raw.githubusercontent.com/synchronizing/osx-start-package/master/start_up.sh" && chmod +x ~/Desktop/start_up.sh && ~/Desktop/start_up.sh
@@ -10,14 +10,14 @@ curl -o ~/Desktop/start_up.sh "https://raw.githubusercontent.com/synchronizing/o
 
 ### `start_up.sh`
 
-Utility for when I re-install OSX fresh. Does the following:
+Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs:
 
 * Dock
   * Sets dock to only show active applications.
 * Bash
   * Sets `/bin/bash` as default prompt (as oppose to zsh).
-  * Installs `.bash_profile` settings in this repo.
-  * Silences OSX Mojave bash deprecation warning.
+  * Installs a custom `.bash_profile` (found in this repo).
+  * Silences OSX Mojave's bash deprecation warning.
   * Silences bash's log-in message.
 * Installs
   * Day-to-Day Applications
