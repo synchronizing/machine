@@ -22,7 +22,7 @@ brew cask install dozer rectangle handbrake appcleaner deluge
 
 # Development
 brew cask install atom iterm2 docker virtualbox
-brew install wget httpie pyenv nodenv rbenv
+brew install wget httpie pyenv pyenv-virtualenv nodenv rbenv
 
 #################################### Bash  ####################################
 
