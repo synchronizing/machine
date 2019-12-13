@@ -3,6 +3,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Path setup.
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
