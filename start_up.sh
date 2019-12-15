@@ -24,6 +24,9 @@ brew cask install dozer rectangle handbrake appcleaner deluge
 brew cask install atom iterm2 docker virtualbox
 brew install wget httpie pyenv pyenv-virtualenv nodenv rbenv
 
+# Design
+brew cask install adobe-creative-cloud
+
 #################################### Bash  ####################################
 
 # Changes from zsh to bash.
@@ -73,7 +76,7 @@ pip install python-language-server[all] black
 apm install atom-material-ui dracula-syntax
 
 # Install Atom packages.
-apm install ide-python python-black file-icons
+apm install ide-python python-black file-icons single-click-open
 
 echo '"*":
   "atom-material-ui":
@@ -95,7 +98,14 @@ echo '"*":
       "dracula-syntax"
     ]
     titleBar: "custom"
+  editor: {}
   "no-title-bar": {}
+  "terminal-tab":
+    shellSettings:
+      shellPath: "/bin/bash"
+  "terminal-tab-plus":
+    shellSettings:
+      shellPath: "/bin/bash"
   welcome:
     showOnStartup: false' > ~/.atom/config.cson
 
