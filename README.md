@@ -21,24 +21,27 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
   * Silences bash's log-in message.
 * Installs
   * Day-to-Day Applications
-    * Google Chrome
-    * WhatsApp
-    * Spotify
+    * [Google Chrome](https://www.google.com/chrome/)
+    * [WhatsApp](https://www.whatsapp.com/)
+    * [Spotify](https://www.spotify.com/us/)
     * [Fantastical 2](https://flexibits.com/fantastical)
   * Security & Privacy
-    * 1Password
-    * NordVPN
-    * Tor-Browser
+    * [1Password](https://1password.com/)
+    * [NordVPN](https://nordvpn.com/)
+    * [Tor-Browser](https://www.torproject.org/download/)
   * Utilities
     * [Dozer](https://dozermac.com/)
     * [Rectangle](https://rectangleapp.com/)
     * [Handbrake](https://handbrake.fr/)
     * [AppCleaner](https://freemacsoft.net/appcleaner/)
     * [Deluge](https://deluge-torrent.org/)
-  * Microsoft Office Suite
+  * [Microsoft Office Suite](https://www.office.com/)
     * Office
     * Excel
     * PowerPoint
+    * OneNote
+    * Outlook
+    * OneDrive
   * Development
     * [Atom](https://atom.io/)
     * [iTerm 2](https://iterm2.com/)
@@ -48,6 +51,7 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
     * [wget](https://www.gnu.org/software/wget/)
   * Version Control (dev)
     * [pyenv](https://github.com/pyenv/pyenv)
+      * [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
     * [nodenv](https://github.com/nodenv/nodenv)
     * [rbenv](https://github.com/rbenv/rbenv)
 * Virtual Envs
@@ -55,7 +59,7 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
   * Installs and sets to global:
     * `Python 3.8.0`
     * `Ruby 2.6.5`
-    * `Nodejs 13.2.0`
+    * `Nodejs 13.2.0`  
 * Python
   * Data Science
     * [`jupyter`](https://jupyter.org/)
@@ -77,7 +81,11 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
     * [`ide-python`](https://atom.io/packages/ide-python)
     * [`python-black`](https://atom.io/packages/python-black)
     * [`file-icon`](https://atom.io/packages/file-icons)
+    * [`terminal-tab-plus`](https://atom.io/packages/terminal-tab-plus)
+    * [`single-click-open`](https://atom.io/packages/single-click-open)
   * Automatically sets theme settings.
+  * Disables "Allow Pending Pane Items" settings. ([ref](https://github.com/atom/atom/issues/11243))
+  * Sets `/bin/bash` as default shell for `terminal-tab-plus`.
 * iTerm
   * Clones [`dracula`](https://draculatheme.com/iterm/) to the desktop for easy theme installation.
 
