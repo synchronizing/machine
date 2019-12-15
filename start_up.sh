@@ -76,7 +76,7 @@ pip install python-language-server[all] black
 apm install atom-material-ui dracula-syntax
 
 # Install Atom packages.
-apm install ide-python python-black file-icons single-click-open
+apm install ide-python python-black file-icons terminal-tab-plus single-click-open
 
 echo '"*":
   "atom-material-ui":
