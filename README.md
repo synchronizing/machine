@@ -54,6 +54,8 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
       * [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
     * [nodenv](https://github.com/nodenv/nodenv)
     * [rbenv](https://github.com/rbenv/rbenv)
+  * Design
+    * [Adobe CC](https://www.adobe.com/creativecloud.html)
 * Virtual Envs
   * Sets up correct PATHs.
   * Installs and sets to global:
