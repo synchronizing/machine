@@ -1,5 +1,7 @@
 # ☕️ Fresh OSX Setup
 
+#### While you can simply run this script, I instead recommend branching this repo and editing the `start_up.sh` file.
+
 ### Installing
 
 Run the following in your Terminal application.
