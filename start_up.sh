@@ -3,6 +3,18 @@
 # Sets Dock to show opened items only.
 defaults write com.apple.dock static-only -bool true; killall Dock
 
+#################################### Bash  ####################################
+
+# Changes from zsh to bash.
+chsh -s /bin/bash
+
+# Downloads custom bash_profile.
+rm -rf ~/.bash_profile
+wget https://gist.githubusercontent.com/synchronizing/c473be05309b2371345733be632b0a3e/raw/ed52ffd6bfbbc732a79a71eee68a75742290d81c/.bash_profile ~/.bash_profile
+
+# Hushes bash log-in message.
+touch ~/.hushlogin
+
 ##################################### Brew #####################################
 
 # Downloads and installs brew
@@ -12,7 +24,7 @@ defaults write com.apple.dock static-only -bool true; killall Dock
 brew cask install google-chrome whatsapp spotify fantastical
 
 # Security & Privacy
-brew cask install 1password nordvpn tor-browser
+brew cask install 1password nordvpn adguard tor-browser
 
 # Office Suite
 brew cask install microsoft-office
@@ -26,18 +38,6 @@ brew install wget httpie pyenv pyenv-virtualenv nodenv rbenv
 
 # Design
 brew cask install adobe-creative-cloud
-
-#################################### Bash  ####################################
-
-# Changes from zsh to bash.
-chsh -s /bin/bash
-
-# Downloads custom bash_profile.
-rm -rf ~/.bash_profile
-wget https://gist.githubusercontent.com/synchronizing/c473be05309b2371345733be632b0a3e/raw/ed52ffd6bfbbc732a79a71eee68a75742290d81c/.bash_profile ~/.bash_profile
-
-# Hushes bash log-in message.
-touch ~/.hushlogin
 
 ################################# Virtual Envs #################################
 
@@ -109,8 +109,7 @@ echo '"*":
   welcome:
     showOnStartup: false' > ~/.atom/config.cson
 
-################################## Downloads ##################################
-
+#################################### iTerm ####################################
 
 # Cloning iTerm color scheme.
 git clone https://github.com/dracula/iterm.git

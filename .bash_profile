@@ -12,34 +12,33 @@ cd ~/Desktop
 
 alias h='echo "
 @Personal
-    h               Opens this help dialogue.
-    drive           cd into Google drive folder.
-    prog            cd into development folder.
-    desk            cd into desktop folder.
+    h                   Opens this help dialogue.
+    desk                Go to desktop folder.
 
 @Utils
-    cheat <str>     Returns a simple cheat-sheet for anything.
-    weather <loc>   Returns the local, or inputted locations weather.
-    short <url>     Returns a shorter link that redirects to the given url.
+    cheat <str>         Returns a simple cheat-sheet for anything.
+    weather <loc>       Returns the local, or inputted locations weather.
+    short <url>         Returns a shorter link that redirects to the given url.
+    gen <name>.<ext>    Generates filename.extension and opens it on Atom.
 
 @Docker
-    dstop           Stops all running Docker containers.
-    drm             Removes all Docker containers.
-    drmi            Removes all Docker images
+    dstop               Stops all running Docker containers.
+    drm                 Removes all Docker containers.
+    drmi                Removes all Docker images
 
 @Internet
-    ports           Displays all the currently open ports on this machine.
-    myip            Prints your local and external IP.
+    ports               Displays all the currently open ports on this machine.
+    myip                Prints local and external IP.
 
 @System
-    finder          Opens the Finder on the current directory.
-    show            Shows hidden files on Finder.
-    hide            Hides hidden files on Finder.
-    showdesk        Shows all the icons on the desktop.
-    hidedesk        Hides all the icons on the desktop.
-    sleepoff        Prevents computer for ever going to sleep; including closing lid.
-    sleepon         Resets computer sleep settings to 10 minutes for sleep.
-    trashDS         Perm deletes all .DS_Store files with nested dirs support.
+    finder              Opens the Finder on the current directory.
+    show                Shows hidden files on Finder.
+    hide                Hides hidden files on Finder.
+    showdesk            Shows all the icons on the desktop.
+    hidedesk            Hides all the icons on the desktop.
+    sleepoff            Prevents computer for ever going to sleep; including closing lid.
+    sleepon             Resets computer sleep settings to 10 minutes for sleep.
+    trashDS             Perm deletes all .DS_Store files with nested dirs support.
 "'
 
 # @Personal
@@ -70,6 +69,15 @@ short_check () {
         echo "Input URL to be shortned."
     else
         http -f 0x0.st shorten=$1 -b
+    fi
+}
+alias gen='generate_file'
+generate_file () {
+    if [ -z "$1" ]; then
+      echo "Please write a <filename>.<extension> to generate file."
+    else
+      file="~/Desktop/$1"
+      atom $file
     fi
 }
 
