@@ -27,6 +27,7 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
   * Day-to-Day Applications
     * [Google Chrome](https://www.google.com/chrome/)
     * [WhatsApp](https://www.whatsapp.com/)
+    * [Discord](https://discordapp.com/)
     * [Spotify](https://www.spotify.com/us/)
     * [Fantastical 2](https://flexibits.com/fantastical)
   * Security & Privacy

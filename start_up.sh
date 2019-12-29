@@ -21,7 +21,7 @@ touch ~/.hushlogin
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Day-to-Day
-brew cask install google-chrome whatsapp spotify fantastical
+brew cask install google-chrome whatsapp discord spotify fantastical
 
 # Security & Privacy
 brew cask install 1password nordvpn adguard tor-browser
