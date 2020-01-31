@@ -53,6 +53,7 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
     * [iTerm 2](https://iterm2.com/)
     * [Docker](https://www.docker.com/)
     * [VirtualBox](https://www.virtualbox.org/)
+    * [Cyberduck](https://cyberduck.io/)
     * [httpie](https://httpie.org/)
     * [wget](https://www.gnu.org/software/wget/)
   * Version Control (dev)

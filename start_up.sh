@@ -33,7 +33,7 @@ brew cask install microsoft-office
 brew cask install dozer rectangle handbrake appcleaner deluge
 
 # Development
-brew cask install atom iterm2 docker virtualbox
+brew cask install atom iterm2 docker virtualbox cyberduck
 brew install wget httpie pyenv pyenv-virtualenv nodenv rbenv
 
 # Design
