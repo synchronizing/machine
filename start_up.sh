@@ -79,6 +79,7 @@ apm install atom-material-ui dracula-syntax
 apm install ide-python python-black file-icons terminal-tab-plus single-click-open
 
 echo '"*":
+  ""*":
   "atom-material-ui":
     colors:
       abaseColor: "#7e7e7e"
@@ -98,8 +99,25 @@ echo '"*":
       "dracula-syntax"
     ]
     titleBar: "custom"
-  editor: {}
+  editor:
+    fontSize: 18
+    scrollPastEnd: true
+  "ide-python":
+    pylsPlugins:
+      jedi_completion: {}
+      jedi_definition:
+        follow_builtin_imports: true
+        follow_imports: true
+      pycodestyle:
+        enabled: false
+      pydocstyle: {}
+      pyflakes: {}
+      pylint: {}
+      rope_completion:
+        enabled: true
   "no-title-bar": {}
+  "status-bar": {}
+  tabs: {}
   "terminal-tab":
     shellSettings:
       shellPath: "/bin/bash"
