@@ -10,7 +10,7 @@ brew install zsh
 brew cask install google-chrome whatsapp discord spotify fantastical
 
 # Security & Privacy
-brew cask install 1password nordvpn adguard tor-browser
+brew cask install 1password nordvpn tor-browser
 
 # Office Suite
 brew cask install microsoft-office

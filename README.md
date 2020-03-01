@@ -26,7 +26,6 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
   * Security & Privacy
     * [1Password](https://1password.com/)
     * [NordVPN](https://nordvpn.com/)
-    * [AdGuard Mac](https://adguard.com/en/adguard-mac/overview.html)
     * [Tor-Browser](https://www.torproject.org/download/)
   * Utilities
     * [Dozer](https://dozermac.com/)
