@@ -1,4 +1,4 @@
-a# ☕️ Fresh OSX Setup
+# ☕️ Fresh OSX Setup
 
 #### While you can simply run this script, I instead recommend branching this repo and editing the `start_up.sh` file to your personal liking. Everything in there is commented and should be obvious!
 
