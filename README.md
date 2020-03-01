@@ -1,4 +1,4 @@
-# ☕️ Fresh OSX Setup
+a# ☕️ Fresh OSX Setup
 
 #### While you can simply run this script, I instead recommend branching this repo and editing the `start_up.sh` file to your personal liking. Everything in there is commented and should be obvious!
 
@@ -26,7 +26,6 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
   * Security & Privacy
     * [1Password](https://1password.com/)
     * [NordVPN](https://nordvpn.com/)
-    * [AdGuard Mac](https://adguard.com/en/adguard-mac/overview.html)
     * [Tor-Browser](https://www.torproject.org/download/)
   * Utilities
     * [Dozer](https://dozermac.com/)
