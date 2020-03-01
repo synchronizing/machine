@@ -1,24 +1,10 @@
-#################################### Dock  ####################################
-
-# Sets Dock to show opened items only.
-defaults write com.apple.dock static-only -bool true; killall Dock
-
-#################################### Bash  ####################################
-
-# Changes from zsh to bash.
-chsh -s /bin/bash
-
-# Downloads custom bash_profile.
-rm -rf ~/.bash_profile
-wget https://gist.githubusercontent.com/synchronizing/c473be05309b2371345733be632b0a3e/raw/ed52ffd6bfbbc732a79a71eee68a75742290d81c/.bash_profile ~/.bash_profile
-
-# Hushes bash log-in message.
-touch ~/.hushlogin
-
 ##################################### Brew #####################################
 
 # Downloads and installs brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Terminal
+brew install zsh
 
 # Day-to-Day
 brew cask install google-chrome whatsapp discord spotify fantastical
@@ -69,6 +55,16 @@ pip install requests aiohttp
 
 # IDE Related
 pip install python-language-server[all] black
+
+##################################### Zsh #####################################
+
+# Installs latest version of Zsh.
+chsh -s $(which zsh)
+
+##################################### Vim #####################################
+
+# Install VimPlug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ##################################### Atom #####################################
 

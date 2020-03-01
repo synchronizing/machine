@@ -16,13 +16,6 @@ curl -o ~/Desktop/start_up.sh "https://raw.githubusercontent.com/synchronizing/o
 
 Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs:
 
-* **Dock**
-  * Sets dock to only show active applications.
-* **Bash**
-  * Sets `/bin/bash` as default prompt (as oppose to zsh).
-  * Installs a custom `.bash_profile` (found in this repo).
-  * Silences OSX Mojave's bash deprecation warning.
-  * Silences bash's log-in message.
 * **Installs** (using [`brew`](https://brew.sh/))
   * Day-to-Day Applications
     * [Google Chrome](https://www.google.com/chrome/)
@@ -82,6 +75,11 @@ Utility for when I reinstall a fresh copy of OSX. When ran, the following occurs
   * IDE Related
     * [`python-language-server[all]`](https://github.com/palantir/python-language-server)
     * [`black`](https://github.com/psf/black)
+* **Zsh**
+  * Theme
+    * [`watercolor`]()
+  * Plugin
+    * []
 * **Atom**
   * Themes
     * [`atom-material-ui`](https://atom.io/themes/atom-material-ui)
