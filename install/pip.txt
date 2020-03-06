@@ -1,0 +1,9 @@
+jupyter
+pandas
+numpy
+matplotlib
+scikit-learn
+requests
+aiohttp
+black
+python-language-server[all]

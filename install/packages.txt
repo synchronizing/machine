@@ -1,0 +1,7 @@
+zsh
+wget
+httpie
+pyenv
+pyenv-virtualenv
+nodenv
+rbenv

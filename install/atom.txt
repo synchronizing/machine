@@ -1,0 +1,7 @@
+atom-material-ui
+dracula-syntax
+ide-python
+python-black
+file-icons 
+terminal-tab-plus
+single-click-open
