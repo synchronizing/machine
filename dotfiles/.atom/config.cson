@@ -1,5 +1,4 @@
 "*":
-  ""*":
   "atom-material-ui":
     colors:
       abaseColor: "#7e7e7e"
@@ -20,8 +19,9 @@
     ]
     titleBar: "custom"
   editor:
-    fontSize: 18
+    fontSize: 15
     scrollPastEnd: true
+  "hey-pane": {}
   "ide-python":
     pylsPlugins:
       jedi_completion: {}

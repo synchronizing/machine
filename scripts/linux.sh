@@ -10,4 +10,8 @@ if [[ ! -z $(which yum) ]]; then
     exit 1;
  fi
 
-echo "This package has not yet been updated to support Linux distros."
+# Install Packages
+ for i in $(cat ~/.machine/install/packages.txt);
+ do
+   $package_manager install "$i";
+ done
