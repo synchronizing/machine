@@ -1,0 +1,14 @@
+[submodule "onehalf"]
+  path = dotfiles/.vim/bundle/onehalf
+  url = https://github.com/sonph/onehalf
+  ignore = dirty
+
+[submodule "python-syntax"]
+  path = dotfiles/.vim/bundle/python-syntax
+  url = https://github.com/vim-python/python-syntax
+  ignore = dirty
+
+[submodule "vim-airline-themes"]
+  path = dotfiles/.vim/bundle/vim-airline-themes
+  url = https://github.com/vim-airline/vim-airline-themes
+  ignore = dirty

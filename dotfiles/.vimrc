@@ -6,7 +6,6 @@
 	set nocompatible
 	filetype plugin on
 
-
 " Plugins
 	set rtp+=~/.vim/bundle/Vundle.vim
 	call vundle#begin()

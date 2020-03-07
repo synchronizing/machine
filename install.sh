@@ -10,7 +10,7 @@ function logo () {
 }
 
 function installed () {
-  cat ~/.machine/install/$1
+  cat install/$1
 }
 
 # Clones Repo
@@ -33,11 +33,11 @@ sh ~/.machine/scripts/general.sh
 if [[ $REPLY =~ ^[1]$ ]]
 then
   echo -e "Installing for MacOSX."
-  sh ~/.machine/scripts/osx.sh
+  sh ~/.machine/install/platform/osx.sh
 elif [[ $REPLY =~ ^[2]$ ]]
 then
   echo -e "Installing for Ubuntu."
-  sh ~/.machine/scripts/linux.sh
+  sh ~/.machine/scripts/platform/linux.sh
 else
   echo -e "Nothing was selected."
   echo -e "Exiting with error 1.\n"
