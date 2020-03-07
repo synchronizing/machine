@@ -10,7 +10,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Installs Dotfiles
-cp -rfs ~/.machine/dotfiles/.* ~/
+cp -rfs ~/.machine/dotfiles/. ~/
 
 # Install Plugins
 vim +PluginInstall +qall

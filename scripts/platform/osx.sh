@@ -14,3 +14,6 @@ for i in $(cat ~/.machine/install/osx/cask.txt);
 do
   brew cask install "$i";
 done
+
+# Installs Atom's Packages
+sh ~/.machine/scripts/macros/atom.sh
