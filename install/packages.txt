@@ -1,4 +1,6 @@
 zsh
+vim
+tmux
 wget
 httpie
 pyenv
