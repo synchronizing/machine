@@ -194,7 +194,3 @@ Custom commands are also installed in both `.bash_profile` and `.zshrc`. Type `h
     sleepon             Resets computer sleep settings to 10 minutes for sleep.
     trashDS             Perm deletes all .DS_Store files with nested dirs support.
 ```
-
----
-
-## Photos
