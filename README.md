@@ -5,7 +5,7 @@
   <br>
 </p>
 
-This is a machine management tool (as oppose to package management tool) that allows the installation and creation of a custom machine setups, including:
+This is a machine management tool (as oppose to package management tool) that allows the installation and configuration of custom machine presets, including (but not limited to):
 
 * Installing packages with the OS's package manager (`brew`, `apt-get`, `yum`, etc.)
 * Install and/or configure:
