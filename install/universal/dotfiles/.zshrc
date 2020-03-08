@@ -2,6 +2,7 @@
 source $HOME/.custom/commands.sh
 
 # ZSHRC Setup
-source $HOME/.oh-my-zsh/oh-my-zsh.sh
-ZSH_THEME="watercolor"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="machine"
 plugins=(git pyenv)
+source $ZSH/oh-my-zsh.sh

@@ -8,5 +8,5 @@ function zsh_install_plugin_manager() {
 
 function zsh_install_themes() {
   THEME_DIR=$1
-  cp -rf $THEME_DIR $ZSH_PM_DIR/themes/
+  cp -rf $THEME_DIR/. $ZSH_PM_DIR/themes/
 }
