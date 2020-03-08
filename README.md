@@ -1,7 +1,7 @@
 # ☕️ Machine
 
 <p align="center">
-  <img height="280" src="./.github/images/machine.png">
+  <img src="./.github/images/machine.png">
   <br>
 </p>
 
