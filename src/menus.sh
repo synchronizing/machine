@@ -24,16 +24,16 @@ function menu () {
   # If a TYPE is passed, then we are going into the main directory.
   if [ -z "$MAIN" ]
   then
-    echo "Type 'exit' to go back."
+    echo "Select a choice. ('q' to go back)"
   else
-    echo "Type 'exit' to quit."
+    echo "Select a folder. ('q' to go quit)"
   fi
 
   # Creates a select menu.
   select filename in $(find * -maxdepth 0 | sed 's/^\.\///g' | sort);
   do
       # Exit attempt.
-      if [[ "$REPLY" == exit ]];
+      if [[ "$REPLY" == q ]];
       then
 
         # Checks if inside main menu, or submenu.
