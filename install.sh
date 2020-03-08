@@ -1,71 +1,90 @@
 #!/bin/bash
 
-function logo () {
-  echo "███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗███████╗"
-  echo "████╗ ████║██╔══██╗██╔════╝██║  ██║██║████╗  ██║██╔════╝"
-  echo "██╔████╔██║███████║██║     ███████║██║██╔██╗ ██║█████╗  "
-  echo "██║╚██╔╝██║██╔══██║██║     ██╔══██║██║██║╚██╗██║██╔══╝  "
-  echo "██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██║██║██║ ╚████║███████╗"
-  echo -e "╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝\n"
+# Settings Github repo.
+GITHUB="https://github.com/synchronizing/machine"
+
+# Setting folder variables.
+MACHINE=$HOME/.machine
+
+# Subfolders
+INSTALL=$MACHINE/install
+SETTINGS=$MACHINE/settings
+SRC=$MACHINE/src
+
+# Prints the logo.
+function logo() {
+  echo ""
+  echo -e "\t███╗   ███╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗███████╗"
+  echo -e "\t████╗ ████║██╔══██╗██╔════╝██║  ██║██║████╗  ██║██╔════╝"
+  echo -e "\t██╔████╔██║███████║██║     ███████║██║██╔██╗ ██║█████╗  "
+  echo -e "\t██║╚██╔╝██║██╔══██║██║     ██╔══██║██║██║╚██╗██║██╔══╝  "
+  echo -e "\t██║ ╚═╝ ██║██║  ██║╚██████╗██║  ██║██║██║ ╚████║███████╗"
+  echo -e "\t╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝\n"
 }
 
-function installed () {
-  cat install/$1
+# Clear screens, prints logo + info.
+function start() {
+  clear
+  logo
+  echo -e "\tPlease refer to documentation for more information."
+  echo -e "\t$GITHUB"
+  echo -e "\n-----------------------------------------------------------------------\n"
 }
 
-# Clones Repo
-git clone https://github.com/synchronizing/machine ~/.machine
+# Checks if repo has been changed.
+# Returns 1 if yes, 0 if no.
+function repository_not_updated() {
+  if [[ 'git status --porcelain' ]]; then
+    return 1
+  else
+    return 0
+  fi
+}
 
-# Clears Screen + Print Logo
-clear
-logo
+# Deletes the repository if no changes found.
+function repository_clean() {
+  cd $MACHINE
+  if repository_not_updated; then
+    echo "No changes found... cleaning up."
+    rm -rf $MACHINE
+  else
+    echo "Changes have been made to $HOME/.machine, and therefore cleaning is not available."
+    echo "Please ensure the repository is saved before cleaning."
+  fi
+}
 
-# Begins Installatin
-echo -e "Please select type of installation:\n"
-echo -e " 1. Minimun"
-echo -e " 2. General\n"
-echo -e " 3. OSX\n"
-echo -e " 4. Ubuntu\n"
+# If repo does not exist, downloads it.
+# If repo does exist, check if needs update.
+function repository_update() {
+  if [ ! -d "$HOME/.machine" ]; then
+    git clone $GITHUB $MACHINE
+  elif [[ $# -eq 0 ]];
+  then
+    cd $MACHINE
+    git fetch
+    if repository_not_updated; then
+      git pull
+    else
+      echo "Repo has changed. Please utilize git to perform updates."
+    fi
+  fi
+}
 
-read -p "Which installation to use? " -n 1 -r
-echo -e "\n"
+# ---------------------------------------------------------------------------- #
 
-sh ~/.machine/scripts/general.sh
+# Downloads repository.
+repository_update 0
 
-if [[ $REPLY =~ ^[1]$ ]]
-then
-  echo -e "Installing minimun."
-  sh ~/.machine/scripts/minimun.sh
-elif [[ $REPLY =~ ^[2]$ ]]
-then
-  echo -e "Installing general."
-  sh ~/.machine/scripts/general.sh
-elif [[ $REPLY =~ ^[3]$ ]]
-then
-  echo -e "Installing for OSX."
-  sh ~/.machine/scripts/osx.sh
-elif [[ $REPLY =~ ^[3]$ ]]
-then
-  echo -e "Installing for Ubuntu."
-  sh ~/.machine/scripts/linux.sh
-else
-  echo -e "Nothing was selected."
-  echo -e "Exiting with error 1.\n"
-  exit 1
-fi
+# Sources main menu.
+source $SRC/menus.sh
 
-# Resets Layout
-clear
-logo
+# Sources installation packages.
+source $SRC/install/dotfiles.sh
+source $SRC/install/misc.sh
+source $SRC/install/packages.sh
+source $SRC/install/tmux.sh
+source $SRC/install/vim.sh
+source $SRC/install/zsh.sh
 
-
-# Prints Installed
-
-echo -e "The following were installed:\n"
-echo -e "###### Packages ######\n"
-installed "packages.txt"
-echo -e "\n###### PIP ######\n"
-installed "pip.txt"
-echo -e "\n###### Atom ######\n"
-installed "atom.txt"
-echo ""
+# Begins main menu setup.
+menu $SETTINGS true

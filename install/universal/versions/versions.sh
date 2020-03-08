@@ -1,0 +1,5 @@
+#!/bin/bash
+
+VERSION_PYTHON="3.8.0"
+VERSION_NODE="13.2.0"
+VERSION_RUBY="2.6.5"
