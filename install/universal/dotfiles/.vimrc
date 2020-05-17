@@ -23,7 +23,6 @@
 	Plugin 'majutsushi/tagbar'
 	Plugin 'junegunn/goyo.vim'
 	Plugin 'preservim/nerdcommenter'
-	Plugin 'HendrikPetertje/vimify'
 
 	" Tmux
 	Bundle 'christoomey/vim-tmux-navigator'
@@ -93,9 +92,6 @@
 	let g:airline_section_z = airline#section#create(['%{strftime("%A, %B %-d @ %-I:%M%p")}'])
 	let g:airline_section_error = ""
 	let g:airline_section_warning = ""
-
-" Vimify
-	let g:spotify_token = "YzcwMmQ5ZGUzNmU3NDA0OGI1Yjg0YjMzZDE0NDU2NWE6IDIxNzgwMTllZjU3MDQ1YTE5NDFmYWY3OTYwNTgzNzhi"
 
 " Copy+Paste w/o Numbers
 	set mouse+=a

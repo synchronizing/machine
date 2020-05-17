@@ -1,6 +1,6 @@
 alias h_osx='echo "
 @System
-    finder              Opens the Finder on the current directory.
+    f                   Opens the Finder on the current directory.
     show                Shows hidden files on Finder.
     hide                Hides hidden files on Finder.
     showdesk            Shows all the icons on the desktop.

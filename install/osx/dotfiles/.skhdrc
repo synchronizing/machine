@@ -1,0 +1,71 @@
+##############################
+#   SHIFT + CTRL + ALT + CMD  #
+###############################
+
+# Restart yabai
+hyper - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+###################
+#   SHIFT + CTRL  #
+###################
+
+# Application Shortcuts
+shift + ctrl - t : open -a iTerm ~/Desktop
+shift + ctrl - f : open -a Finder --new
+shift + ctrl - c : open -a Google\ Chrome --new
+
+###################
+# SHIFT + COMMAND #
+###################
+
+# Toggle Layout Settings
+shift + cmd - i : yabai -m space --layout bsp
+shift + cmd - o : yabai -m space --layout float
+
+# Move Window Focus
+shift + cmd - h : yabai -m window --focus west
+shift + cmd - j : yabai -m window --focus south
+shift + cmd - k : yabai -m window --focus north
+shift + cmd - l : yabai -m window --focus east
+
+# Change Monitor
+shift + cmd - 1 : yabai -m display --focus 1
+shift + cmd - 2 : yabai -m display --focus 2
+shift + cmd - 3 : yabai -m display --focus 3
+shift + cmd - m : yabai -m display --focus recent
+
+# Full Screen
+shift + cmd - f : yabai -m window --toggle native-fullscreen
+
+# Balance Window Sizes
+shift + cmd - r : yabai -m space --balance
+
+# Open Emoji List
+shift + cmd - e : skhd -k "ctrl + cmd - space"
+
+# Make Window Sticky
+shift + cmd - s : yabai -m window --toggle float
+
+# Hide/show Desktop Icons
+shift + cmd - q: defaults write com.apple.finder CreateDesktop false; killall Finder | echo "Hiding desktop icons."
+shift + cmd - w: defaults write com.apple.finder CreateDesktop true; killall Finder | echo "Showing desktop icons."
+
+
+#########################
+#   SHIFT + ALT + CMD   #
+#########################
+
+# Swap Windows
+shift + alt + cmd - h : yabai -m window --swap west
+shift + alt + cmd - j : yabai -m window --swap south
+shift + alt + cmd - k : yabai -m window --swap north
+shift + alt + cmd - l : yabai -m window --swap east
+
+##########
+#   FN   #
+##########
+
+# Spotify
+fn - f8 : spotify pause
+fn - f11 : spotify vol down
+fn - f12 : spotify vol up
