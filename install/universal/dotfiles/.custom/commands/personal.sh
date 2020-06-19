@@ -4,6 +4,5 @@ alias h_personal='echo "
     desk                Go to desktop folder."'
 
 # @Personal
-alias drive='cd ~/Drive/'
-alias prog='cd ~/Drive/Sandbox/Programming'
+alias drive='cd ~/Google\ Drive/'
 alias desk="cd ~/Desktop"
