@@ -14,3 +14,11 @@ function misc_install_general() {
   source $SETTINGS/env/general.sh
   run
 }
+
+function misc_syslink_all() {
+  SOURCE=$1
+  DESTINATION=$2
+  for source_file in $SOURCE/*; do
+      ln -s $source_file "$DESTINATION"
+  done
+}
