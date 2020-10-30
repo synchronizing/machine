@@ -24,12 +24,6 @@ Run the following to begin the installation (`bash` used for cosmetic reasons; `
 bash -c "$(curl -fsSL https://raw.github.com/synchronizing/machine/master/install.sh)"
 ```
 
-Shorter link:
-
-```
-bash -c "$(curl -fsSL self.st/install.sh)"
-```
-
 ---
 
 ## Creating Own Configuration
